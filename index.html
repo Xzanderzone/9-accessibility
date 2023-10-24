@@ -33,13 +33,15 @@
     </nav>
     <header role="banner">
       <section id="parallaxTop" data-speed="8" data-type="background">
-          <div class="container text-center">
+          <div class="container text-center pt-5">
             <h1>Welcome weary traveller</h1>
+            <h2>You feel rested and ready for your next adventure</h2>
+            <a href="#main">Get Inspired</a>
           </div>
       </section>
     </header>
     <!-- main content -->
-    <main role="main" class="pt-4 card-group text-center mx-auto">
+    <main role="main" id="main" class="pt-4 card-group text-center mx-auto">
       <section id="parallaxMain" data-speed="8" data-type="background">
         <!-- info cards -->
         <div class="col-sm-12 px-3 pb-3">
@@ -49,40 +51,12 @@
             </div>
           </div>
         </div>
-        <!-- map and location -->
+        <!-- go to blog  -->
         <div class="col-sm-12 col-lg-6 px-3 pb-3">
           <div class="card cardbg">
             <div class="card-body">
-              <h4 class="card-title">Or here tbh</h4>
+              <h4 class="card-title">Check out our blog page</h4>
             </div>
-          </div>
-        </div>
-        <!-- newsletter form -->
-        <div class="col-sm-12 col-lg-6 text-start px-3 pb-3">
-          <div class="card h-100 cardbg p-3">
-            <form action="https://formspree.io/f/maygazzd" method="POST" enctype="multipart/form-data">
-              <div class="text-center">
-                <h4>Stay up to date! Sign up to our newsletter</h4>
-              <div class="form-group">
-                <label for="name">Full Name</label>
-                <input type="text" class="form-control w-50" id="name" name="name" placeholder="Boba Fett"/>
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="text" class="form-control w-50" id="email" name="email" placeholder="need.siblings@gmail.com"/>
-              </div>
-              <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="text" class="form-control w-50" id="phone" name="phone" placeholder="04-..."/>
-              </div>
-              <div class="md-form">
-                <label for="message">Custom message</label>
-                <textarea type="text" id="message" name="message" rows="4" class="form-control md-textarea"></textarea>
-              </div>
-              <div class="text-center text-md-left pt-2">
-                <button type="submit" class="" onclick="alert('Thank you for signing up to our newsletter! \n  ')">Send</button>
-              </div>
-            </form>
           </div>
         </div>
       </section>
@@ -95,11 +69,20 @@
             <div class="small m-0 text-white">
               Copyright &copy; Travelblog - 2023
             </div>
+          </div>         
+          <div class="col-auto">
+            <div class="small m-0 text-white">
+              <a href="https://facebook.com"><img alt="facebook" class="footericon" src="./pictures/icons/facebook.png"></a>
+              <a href="https://twitter.com"><img alt="twitter" class="footericon" src="./pictures/icons/twitter.png"></a>
+              <a href="https://instagram.com"><img alt="instagram" class="footericon" src="./pictures/icons/instagram.png"></a>
+              <a href="https://youtube.com/xzanderzonez"><img alt="youtube" class="footericon" src="./pictures/icons/youtube.png"></a>
+            </div>
           </div>
           <div class="col-auto">
             <a class="link-light small" href="./index.html">Home</a>
             <span class="text-white mx-1">&middot;</span>
             <a class="link-light small" href="./blog.html">Blog</a>
+            <span class="text-white mx-1">&middot;</span>
             <a class="link-light small" href="./contact.html">Contact</a>
           </div>
         </div>

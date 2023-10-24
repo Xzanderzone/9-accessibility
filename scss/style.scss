@@ -4,14 +4,14 @@
   --secondary-color: #29b916;
   --primary-text: #217ab1;
   --paragraph-color: rgb(0, 0, 0);
-  --parallax-multiplier:linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+  --parallax-multiplier:linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
 }
 .darkmode{
   --clr-light: #151616;
   --clr-dark: #dfdfdf;
   --secondary-color: #0f7701;
   --primary-text: #0f2f42;
-  --paragraph-color: rgb(218, 218, 218);
+  --paragraph-color: rgb(255, 255, 255);
   --parallax-multiplier:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
 }
 body {
@@ -44,7 +44,6 @@ body {
     position: relative; 
     h1{
       color:var(--paragraph-color);
-      background-color: red;
     }
    
   }    
@@ -96,5 +95,11 @@ body {
   }
   button {
     background-color: var(--primary-text);
+  }
+  footer{
+    .footericon{
+      width: 35px;
+      margin-right: 20px;
+    }
   }
 }
