@@ -1,0 +1,74 @@
+:root{
+  --clr-light: #dfdfdf;
+  --clr-dark: #151616;
+  --secondary-color: #29b916;
+  --primary-text: #217ab1;
+  --paragraph-color: rgb(0, 0, 0);
+}
+.darkmode{
+  --clr-light: #151616;
+  --clr-dark: #dfdfdf;
+  --secondary-color: #0f7701;
+  --primary-text: #0f2f42;
+  --paragraph-color: rgb(218, 218, 218);
+}
+body {
+  margin-top: 3rem;
+  background: var(--clr-light);
+  color:var(--clr-dark);
+  .navbar {
+    background: var(--secondary-color);
+    color:var(--clr-dark);
+    box-shadow:
+    var(--secondary-color) 0px 3px 6px,
+    var(--secondary-color) 0px 3px 6px;
+    a:hover {
+      color: var(--clr-light);
+    }
+    a.contact {
+      border-radius: 0.5rem;
+      color:var(--clr-light);
+    }
+  }
+  main{
+    width:80%;
+    img {
+      border-radius: 0.25rem;
+      border: 2px solid var(--clr-dark);
+      width: 100%;
+    }
+    h4 {
+      color: var(--secondary-color);
+    }
+    i {
+      color: var(--secondary-color);
+    }
+    p{
+      color: var(--paragraph-color);
+    }
+    figcaption{
+      color: var(--paragraph-color);
+    }
+      .card-title {
+        color: var(--secondary-color);
+        text-decoration: underline;
+      }
+      .cardbg {
+        background-color: var(--primary-text);
+        border: 3px solid var(--clr-dark);
+      }
+  }
+
+  label {
+    color: var(--clr-light);
+    padding-top: 0.25rem;
+    padding-left: 0.5rem;
+  }
+  .formbutton {
+    background-color: var(--secondary-color);
+    border-radius: 0.5rem;
+  }
+  button {
+    background-color: var(--primary-text);
+  }
+}

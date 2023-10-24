@@ -1,0 +1,75 @@
+:root {
+  --clr-light: #dfdfdf;
+  --clr-dark: #151616;
+  --secondary-color: #29b916;
+  --primary-text: #217ab1;
+  --paragraph-color: rgb(0, 0, 0);
+}
+
+.darkmode {
+  --clr-light: #151616;
+  --clr-dark: #dfdfdf;
+  --secondary-color: #0f7701;
+  --primary-text: #0f2f42;
+  --paragraph-color: rgb(218, 218, 218);
+}
+
+body {
+  margin-top: 3rem;
+  background: var(--clr-light);
+  color: var(--clr-dark);
+}
+body .navbar {
+  background: var(--secondary-color);
+  color: var(--clr-dark);
+  box-shadow: var(--secondary-color) 0px 3px 6px, var(--secondary-color) 0px 3px 6px;
+}
+body .navbar a:hover {
+  color: var(--clr-light);
+}
+body .navbar a.contact {
+  border-radius: 0.5rem;
+  color: var(--clr-light);
+}
+body main {
+  width: 80%;
+}
+body main img {
+  border-radius: 0.25rem;
+  border: 2px solid var(--clr-dark);
+  width: 100%;
+}
+body main h4 {
+  color: var(--secondary-color);
+}
+body main i {
+  color: var(--secondary-color);
+}
+body main p {
+  color: var(--paragraph-color);
+}
+body main figcaption {
+  color: var(--paragraph-color);
+}
+body main .card-title {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+body main .cardbg {
+  background-color: var(--primary-text);
+  border: 3px solid var(--clr-dark);
+}
+body label {
+  color: var(--clr-light);
+  padding-top: 0.25rem;
+  padding-left: 0.5rem;
+}
+body .formbutton {
+  background-color: var(--secondary-color);
+  border-radius: 0.5rem;
+}
+body button {
+  background-color: var(--primary-text);
+}
+
+/*# sourceMappingURL=style.css.map */
