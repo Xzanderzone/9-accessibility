@@ -4,6 +4,7 @@
   --secondary-color: #29b916;
   --primary-text: #217ab1;
   --paragraph-color: rgb(0, 0, 0);
+  --parallax-multiplier:linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
 }
 .darkmode{
   --clr-light: #151616;
@@ -11,6 +12,7 @@
   --secondary-color: #0f7701;
   --primary-text: #0f2f42;
   --paragraph-color: rgb(218, 218, 218);
+  --parallax-multiplier:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
 }
 body {
   margin-top: 3rem;
@@ -30,8 +32,32 @@ body {
       color:var(--clr-light);
     }
   }
+    
+  #parallaxTop{ 
+    background:var(--parallax-multiplier),url(./pictures/parallax/waterfall.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    height: 85vh; 
+    margin: 0 auto; 
+    position: relative; 
+    h1{
+      color:var(--paragraph-color);
+      background-color: red;
+    }
+   
+  }    
   main{
-    width:80%;
+    #parallaxMain{ 
+      background:var(--parallax-multiplier), url(./pictures/parallax/underwater.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center; 
+      height: 85vh; 
+      width: 100%;
+    }
     img {
       border-radius: 0.25rem;
       border: 2px solid var(--clr-dark);
@@ -49,16 +75,16 @@ body {
     figcaption{
       color: var(--paragraph-color);
     }
-      .card-title {
-        color: var(--secondary-color);
-        text-decoration: underline;
-      }
-      .cardbg {
-        background-color: var(--primary-text);
-        border: 3px solid var(--clr-dark);
-      }
+    .card-title {
+      color: var(--secondary-color);
+      text-decoration: underline;
+    }
+    .cardbg {
+      background-color: var(--primary-text);
+      border: 3px solid var(--clr-dark);
+    }
   }
-
+  
   label {
     color: var(--clr-light);
     padding-top: 0.25rem;

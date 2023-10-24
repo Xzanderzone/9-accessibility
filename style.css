@@ -4,6 +4,7 @@
   --secondary-color: #29b916;
   --primary-text: #217ab1;
   --paragraph-color: rgb(0, 0, 0);
+  --parallax-multiplier:linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
 }
 
 .darkmode {
@@ -12,6 +13,7 @@
   --secondary-color: #0f7701;
   --primary-text: #0f2f42;
   --paragraph-color: rgb(218, 218, 218);
+  --parallax-multiplier:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
 }
 
 body {
@@ -31,8 +33,28 @@ body .navbar a.contact {
   border-radius: 0.5rem;
   color: var(--clr-light);
 }
-body main {
-  width: 80%;
+body #parallaxTop {
+  background: var(--parallax-multiplier), url(./pictures/parallax/waterfall.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 85vh;
+  margin: 0 auto;
+  position: relative;
+}
+body #parallaxTop h1 {
+  color: var(--paragraph-color);
+  background-color: red;
+}
+body main #parallaxMain {
+  background: var(--parallax-multiplier), url(./pictures/parallax/underwater.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 85vh;
+  width: 100%;
 }
 body main img {
   border-radius: 0.25rem;
