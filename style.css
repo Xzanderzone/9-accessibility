@@ -1,8 +1,8 @@
 :root {
   --clr-light: #dfdfdf;
   --clr-dark: #151616;
-  --secondary-color: #29b916;
-  --primary-text: #217ab1;
+  --secondary-color: #ffffff;
+  --primary-color: #008ee6;
   --paragraph-color: rgb(0, 0, 0);
   --parallax-multiplier:linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
 }
@@ -10,28 +10,51 @@
 .darkmode {
   --clr-light: #151616;
   --clr-dark: #dfdfdf;
-  --secondary-color: #0f7701;
-  --primary-text: #0f2f42;
+  --secondary-color: #1ADC01;
+  --primary-color: #00273D;
   --paragraph-color: rgb(255, 255, 255);
   --parallax-multiplier:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
 }
 
 body {
   margin-top: 3rem;
-  background: var(--clr-light);
+  background-color: var(--clr-light);
   color: var(--clr-dark);
 }
-body .navbar {
-  background: var(--secondary-color);
-  color: var(--clr-dark);
-  box-shadow: var(--secondary-color) 0px 3px 6px, var(--secondary-color) 0px 3px 6px;
-}
-body .navbar a:hover {
+body a, body .formbutton {
+  border-radius: 0.5rem;
+  margin-left: 20px;
+  margin-right: 40px;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
   color: var(--clr-light);
+  background-color: var(--clr-dark);
 }
-body .navbar a.contact {
+body .resizeable {
+  border-radius: 0rem;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+body a:hover, body .formbutton:hover {
+  color: var(--clr-dark);
+  background-color: var(--clr-light);
+}
+body nav {
+  background-color: var(--primary-color);
+  box-shadow: var(--clr-dark) 0px 3px 6px, var(--clr-light) 0px 3px 6px;
+}
+body .activepage {
   border-radius: 0.5rem;
   color: var(--clr-light);
+}
+body button {
+  color: var(--primary-color);
+}
+body button:hover {
+  color: var(--secondary-color);
 }
 body #parallaxTop {
   background: var(--parallax-multiplier), url(./pictures/parallax/waterfall.jpg);
@@ -59,9 +82,11 @@ body main img {
   border-radius: 0.25rem;
   border: 2px solid var(--clr-dark);
   width: 100%;
+  max-width: 800px;
 }
-body main h4 {
+body main h4, body main h5 {
   color: var(--secondary-color);
+  padding-bottom: 5px;
 }
 body main i {
   color: var(--secondary-color);
@@ -74,27 +99,26 @@ body main figcaption {
 }
 body main .card-title {
   color: var(--secondary-color);
-  text-decoration: underline;
 }
 body main .cardbg {
-  background-color: var(--primary-text);
+  background-color: var(--primary-color);
   border: 3px solid var(--clr-dark);
+}
+body main footer .footericon {
+  width: 35px;
+  margin-right: 20px;
+  border-radius: 0rem;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+body main .card-size-toggle {
+  transition-duration: 1000ms;
 }
 body label {
   color: var(--clr-light);
   padding-top: 0.25rem;
   padding-left: 0.5rem;
-}
-body .formbutton {
-  background-color: var(--secondary-color);
-  border-radius: 0.5rem;
-}
-body button {
-  background-color: var(--primary-text);
-}
-body footer .footericon {
-  width: 35px;
-  margin-right: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

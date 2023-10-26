@@ -1,36 +1,59 @@
 :root{
   --clr-light: #dfdfdf;
   --clr-dark: #151616;
-  --secondary-color: #29b916;
-  --primary-text: #217ab1;
+  --secondary-color: #ffffff;
+  --primary-color: #008ee6;
+  // --secondary-color: #F7FF00;
+  // --primary-color: #000056;
   --paragraph-color: rgb(0, 0, 0);
   --parallax-multiplier:linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
 }
 .darkmode{
   --clr-light: #151616;
   --clr-dark: #dfdfdf;
-  --secondary-color: #0f7701;
-  --primary-text: #0f2f42;
+  --secondary-color: #1ADC01;
+  --primary-color: #00273D;
   --paragraph-color: rgb(255, 255, 255);
   --parallax-multiplier:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
 }
 body {
   margin-top: 3rem;
-  background: var(--clr-light);
+  background-color: var(--clr-light);
   color:var(--clr-dark);
-  .navbar {
-    background: var(--secondary-color);
-    color:var(--clr-dark);
-    box-shadow:
-    var(--secondary-color) 0px 3px 6px,
-    var(--secondary-color) 0px 3px 6px;
-    a:hover {
-      color: var(--clr-light);
-    }
-    a.contact {
-      border-radius: 0.5rem;
-      color:var(--clr-light);
-    }
+  a,.formbutton{
+    border-radius: 0.5rem;
+    margin-left: 20px;
+    margin-right: 40px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    color: var(--clr-light);
+    background-color: var(--clr-dark);
+  }
+  .resizeable{ //this should work nested in a but doesnt?
+    border-radius: 0rem;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+  }
+  a:hover ,.formbutton:hover{
+    color: var(--clr-dark);
+    background-color: var(--clr-light);
+  }
+  nav{
+    background-color: var(--primary-color);
+    box-shadow: var(--clr-dark) 0px 3px 6px, var(--clr-light) 0px 3px 6px;
+  }
+  .activepage{
+    border-radius: 0.5rem;
+    color:var(--clr-light);
+  }
+  button{
+    color: var(--primary-color);
+  }
+  button:hover{
+    color: var(--secondary-color);
   }
     
   #parallaxTop{ 
@@ -61,9 +84,11 @@ body {
       border-radius: 0.25rem;
       border: 2px solid var(--clr-dark);
       width: 100%;
+      max-width: 800px;
     }
-    h4 {
+    h4,h5{
       color: var(--secondary-color);
+      padding-bottom: 5px;
     }
     i {
       color: var(--secondary-color);
@@ -76,30 +101,29 @@ body {
     }
     .card-title {
       color: var(--secondary-color);
-      text-decoration: underline;
+      // text-decoration: underline;
     }
     .cardbg {
-      background-color: var(--primary-text);
+      background-color: var(--primary-color);
       border: 3px solid var(--clr-dark);
     }
+    footer{
+      .footericon{
+        width: 35px;
+        margin-right: 20px;
+        border-radius: 0rem;
+        margin: 0px;
+        padding: 0px;
+        text-decoration: none;
+      }
+    }
+    .card-size-toggle{
+      transition-duration: 1000ms;
+    }
   }
-  
   label {
     color: var(--clr-light);
     padding-top: 0.25rem;
     padding-left: 0.5rem;
-  }
-  .formbutton {
-    background-color: var(--secondary-color);
-    border-radius: 0.5rem;
-  }
-  button {
-    background-color: var(--primary-text);
-  }
-  footer{
-    .footericon{
-      width: 35px;
-      margin-right: 20px;
-    }
   }
 }
