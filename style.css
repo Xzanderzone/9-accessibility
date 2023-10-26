@@ -22,7 +22,7 @@ body {
   color: var(--clr-dark);
 }
 body a, body .formbutton {
-  border-radius: 0.5rem;
+  border-radius: 0.7rem;
   margin-left: 20px;
   margin-right: 40px;
   padding-top: 5px;
@@ -31,6 +31,17 @@ body a, body .formbutton {
   padding-left: 10px;
   color: var(--clr-light);
   background-color: var(--clr-dark);
+}
+body footer {
+  background-color: var(--primary-color);
+}
+body .socials a {
+  border-radius: 0rem;
+  margin: 0px;
+  margin-right: 20px;
+  width: 35px;
+  padding: 0px;
+  background-color: var(--primary-color);
 }
 body .resizeable {
   border-radius: 0rem;
@@ -49,12 +60,6 @@ body nav {
 body .activepage {
   border-radius: 0.5rem;
   color: var(--clr-light);
-}
-body button {
-  color: var(--primary-color);
-}
-body button:hover {
-  color: var(--secondary-color);
 }
 body #parallaxTop {
   background: var(--parallax-multiplier), url(./pictures/parallax/waterfall.jpg);
@@ -80,7 +85,7 @@ body main #parallaxMain {
 }
 body main img {
   border-radius: 0.25rem;
-  border: 2px solid var(--clr-dark);
+  border: 2px solid var(---color);
   width: 100%;
   max-width: 800px;
 }
@@ -104,18 +109,10 @@ body main .cardbg {
   background-color: var(--primary-color);
   border: 3px solid var(--clr-dark);
 }
-body main footer .footericon {
-  width: 35px;
-  margin-right: 20px;
-  border-radius: 0rem;
-  margin: 0px;
-  padding: 0px;
-  text-decoration: none;
-}
 body main .card-size-toggle {
   transition-duration: 1000ms;
 }
-body label {
+body main label {
   color: var(--clr-light);
   padding-top: 0.25rem;
   padding-left: 0.5rem;

@@ -21,7 +21,7 @@ body {
   background-color: var(--clr-light);
   color:var(--clr-dark);
   a,.formbutton{
-    border-radius: 0.5rem;
+    border-radius: 0.7rem;
     margin-left: 20px;
     margin-right: 40px;
     padding-top: 5px;
@@ -31,7 +31,18 @@ body {
     color: var(--clr-light);
     background-color: var(--clr-dark);
   }
-  .resizeable{ //this should work nested in a but doesnt?
+  footer{
+    background-color: var(--primary-color);
+  }
+  .socials a{
+    border-radius: 0rem;
+    margin: 0px;
+    margin-right: 20px;
+    width: 35px;
+    padding: 0px;
+    background-color: var(--primary-color);
+  }
+  .resizeable{ //for the cards ,this should work nested in a but doesnt?
     border-radius: 0rem;
     margin: 0px;
     padding: 0px;
@@ -48,14 +59,7 @@ body {
   .activepage{
     border-radius: 0.5rem;
     color:var(--clr-light);
-  }
-  button{
-    color: var(--primary-color);
-  }
-  button:hover{
-    color: var(--secondary-color);
-  }
-    
+  }    
   #parallaxTop{ 
     background:var(--parallax-multiplier),url(./pictures/parallax/waterfall.jpg);
     background-size: cover;
@@ -82,7 +86,7 @@ body {
     }
     img {
       border-radius: 0.25rem;
-      border: 2px solid var(--clr-dark);
+      border: 2px solid var(---color);
       width: 100%;
       max-width: 800px;
     }
@@ -107,23 +111,13 @@ body {
       background-color: var(--primary-color);
       border: 3px solid var(--clr-dark);
     }
-    footer{
-      .footericon{
-        width: 35px;
-        margin-right: 20px;
-        border-radius: 0rem;
-        margin: 0px;
-        padding: 0px;
-        text-decoration: none;
-      }
-    }
     .card-size-toggle{
       transition-duration: 1000ms;
     }
-  }
-  label {
-    color: var(--clr-light);
-    padding-top: 0.25rem;
-    padding-left: 0.5rem;
+    label {
+      color: var(--clr-light);
+      padding-top: 0.25rem;
+      padding-left: 0.5rem;
+    }
   }
 }
