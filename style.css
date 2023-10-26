@@ -21,6 +21,28 @@ body {
   background-color: var(--clr-light);
   color: var(--clr-dark);
 }
+body nav {
+  background-color: var(--primary-color);
+  box-shadow: var(--clr-dark) 0px 3px 6px, var(--clr-light) 0px 3px 6px;
+}
+body nav .navbar-brand {
+  color: var(--clr-light);
+}
+body nav .nav-item {
+  border-radius: 0.25rem;
+}
+body nav .nav-item .activepage {
+  color: var(--clr-dark);
+  box-shadow: var(--clr-dark) 0px 3px 4px inset;
+}
+body nav .nav-item .page {
+  color: var(--clr-light);
+  background-color: var(--clr-dark);
+}
+body nav .nav-item .page:hover {
+  color: var(--clr-dark);
+  background-color: var(--clr-light);
+}
 body a, body .formbutton {
   border-radius: 0.7rem;
   margin-left: 20px;
@@ -35,6 +57,12 @@ body a, body .formbutton {
 body footer {
   background-color: var(--primary-color);
 }
+body .resizeable {
+  border-radius: 0rem;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
 body .socials a {
   border-radius: 0rem;
   margin: 0px;
@@ -43,23 +71,13 @@ body .socials a {
   padding: 0px;
   background-color: var(--primary-color);
 }
-body .resizeable {
-  border-radius: 0rem;
-  margin: 0px;
-  padding: 0px;
-  text-decoration: none;
+body .socials a :hover {
+  -webkit-filter: invert(1);
+  filter: invert(1);
 }
 body a:hover, body .formbutton:hover {
   color: var(--clr-dark);
   background-color: var(--clr-light);
-}
-body nav {
-  background-color: var(--primary-color);
-  box-shadow: var(--clr-dark) 0px 3px 6px, var(--clr-light) 0px 3px 6px;
-}
-body .activepage {
-  border-radius: 0.5rem;
-  color: var(--clr-light);
 }
 body #parallaxTop {
   background: var(--parallax-multiplier), url(./pictures/parallax/waterfall.jpg);
@@ -91,7 +109,7 @@ body main img {
 }
 body main h4, body main h5 {
   color: var(--secondary-color);
-  padding-bottom: 5px;
+  padding: 10px;
 }
 body main i {
   color: var(--secondary-color);
@@ -107,6 +125,7 @@ body main .card-title {
 }
 body main .cardbg {
   background-color: var(--primary-color);
+  border-radius: 15px;
   border: 3px solid var(--clr-dark);
 }
 body main .card-size-toggle {

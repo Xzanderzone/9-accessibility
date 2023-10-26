@@ -20,6 +20,28 @@ body {
   margin-top: 3rem;
   background-color: var(--clr-light);
   color:var(--clr-dark);
+  nav{
+    background-color: var(--primary-color);
+    box-shadow: var(--clr-dark) 0px 3px 6px, var(--clr-light) 0px 3px 6px;
+    .navbar-brand{
+      color:var(--clr-light)
+    }
+    .nav-item{
+      border-radius: 0.25rem;
+      .activepage{
+        color:var(--clr-dark);
+        box-shadow: var(--clr-dark) 0px 3px 4px inset;
+      }    
+      .page{
+        color:var(--clr-light);
+        background-color: var(--clr-dark);
+      }    
+      .page:hover{
+        color:var(--clr-dark);
+        background-color: var(--clr-light);
+      }    
+    }    
+  }
   a,.formbutton{
     border-radius: 0.7rem;
     margin-left: 20px;
@@ -34,32 +56,28 @@ body {
   footer{
     background-color: var(--primary-color);
   }
-  .socials a{
-    border-radius: 0rem;
-    margin: 0px;
-    margin-right: 20px;
-    width: 35px;
-    padding: 0px;
-    background-color: var(--primary-color);
-  }
   .resizeable{ //for the cards ,this should work nested in a but doesnt?
     border-radius: 0rem;
     margin: 0px;
     padding: 0px;
     text-decoration: none;
   }
+  .socials a{ //no border on social icons
+    border-radius: 0rem;
+    margin: 0px;
+    margin-right: 20px;
+    width: 35px;
+    padding: 0px;
+    background-color: var(--primary-color);
+    :hover{ //social icons
+      -webkit-filter: invert(1);
+      filter: invert(1);
+    }
+  }
   a:hover ,.formbutton:hover{
     color: var(--clr-dark);
     background-color: var(--clr-light);
   }
-  nav{
-    background-color: var(--primary-color);
-    box-shadow: var(--clr-dark) 0px 3px 6px, var(--clr-light) 0px 3px 6px;
-  }
-  .activepage{
-    border-radius: 0.5rem;
-    color:var(--clr-light);
-  }    
   #parallaxTop{ 
     background:var(--parallax-multiplier),url(./pictures/parallax/waterfall.jpg);
     background-size: cover;
@@ -92,7 +110,7 @@ body {
     }
     h4,h5{
       color: var(--secondary-color);
-      padding-bottom: 5px;
+      padding: 10px;
     }
     i {
       color: var(--secondary-color);
@@ -109,6 +127,7 @@ body {
     }
     .cardbg {
       background-color: var(--primary-color);
+      border-radius: 15px;
       border: 3px solid var(--clr-dark);
     }
     .card-size-toggle{

@@ -11,23 +11,23 @@
     <title>Contact</title>
   </head>
   <body>
-    <nav role="navigation" class="navbar navbar-expand-lg navbar-light fixed-top ">
+    <nav role="navigation" class="navbar navbar-expand-lg fixed-top">
       <a class="navbar-brand" href="#">Travelblog</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
         aria-controls="navbarResponsive"  aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a id="dark-mode-toggle" type="button"  class="dark-mode-toggle"
+      <a id="dark-mode-toggle" class="dark-mode-toggle"
         data-theme-toggle aria-label="Change to light theme">Dark mode</a>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link page" href="index.html">Home</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link activepage" href="blog.html">Blog</a>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link page" href="contact.html">Contact</a>
         </ul>
       </div>
     </nav>
@@ -228,20 +228,21 @@
       </div>
     </main>
     <!-- Footer-->
-    <footer class="bg-dark py-4 mt-auto" role="contentinfo">
-      <div class="container px-5">
-        <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-          <div class="col-auto">
-            <div class="small m-0 text-white">
-              Copyright &copy; Travelblog - 2023
-            </div>
-          </div>
-          <div class="col-auto">
-            <a class="link-light small" href="./index.html">Home</a>
-            <span class="text-white mx-1">&middot;</span>
-            <a class="link-light small" href="./blog.html">Blog</a>
-            <a class="link-light small" href="./contact.html">Contact</a>
-          </div>
+    <footer class="py-2 mt-auto" role="contentinfo">
+      <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+        <div class="col-auto px-3">Copyright &copy; Travelblog - 2023</div>         
+        <div class="col-auto socials">
+          <a href="https://facebook.com"><img alt="facebook" src="./pictures/icons/facebook.png"></a>
+          <a href="https://twitter.com"><img alt="twitter" src="./pictures/icons/twitter.png"></a>
+          <a href="https://instagram.com"><img alt="instagram" src="./pictures/icons/instagram.png"></a>
+          <a href="https://youtube.com/xzanderzonez"><img alt="youtube" src="./pictures/icons/youtube.png"></a>
+        </div>
+        <div class="col-auto">
+          <a href="./index.html">Home</a>
+          <span class="text-white mx-1">&middot;</span>
+          <a href="./blog.html">Blog</a>
+          <span class="text-white mx-1">&middot;</span>
+          <a href="./contact.html">Contact</a>
         </div>
       </div>
     </footer>
