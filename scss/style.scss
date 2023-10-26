@@ -117,6 +117,7 @@ body {
     }
     p{
       color: var(--paragraph-color);
+      font-size: larger;
     }
     figcaption{
       color: var(--paragraph-color);
@@ -131,12 +132,19 @@ body {
       border: 3px solid var(--clr-dark);
     }
     .card-size-toggle{
-      transition-duration: 1000ms;
+      transition-duration: 500ms;
     }
     label {
-      color: var(--clr-light);
+      color: var(--clr-dark);
       padding-top: 0.25rem;
       padding-left: 0.5rem;
+    }
+    .form-group{
+
+      input,textarea,::placeholder{
+        background-color: var(--clr-light);
+        color: var(--clr-dark);
+      }
     }
   }
 }
