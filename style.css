@@ -137,7 +137,7 @@ body main label {
   padding-top: 0.25rem;
   padding-left: 0.5rem;
 }
-body main .form-group input, body main .form-group textarea, body main .form-group ::placeholder {
+body main .form-group input, body main .form-group textarea, body main .form-group ::placeholder, body main .form-group #name, body main .form-group #email, body main .form-group #message {
   background-color: var(--clr-light);
   color: var(--clr-dark);
 }

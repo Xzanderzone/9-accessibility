@@ -141,7 +141,7 @@ body {
     }
     .form-group{
 
-      input,textarea,::placeholder{
+      input,textarea,::placeholder,#name,#email,#message{
         background-color: var(--clr-light);
         color: var(--clr-dark);
       }
